@@ -6,13 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/isimText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="95dp"
+        android:ems="10"
+        android:hint="kullanıcı adı"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/buttonKaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="kaydet"
+        android:text="kaydet"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonSil"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSil"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="88dp"
+        android:onClick="sil"
+        android:text="sil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isimText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    viewBinding { enable = true }
     namespace = "com.mustafauyar.kullaniciadisaklama"
     compileSdk = 34
 
