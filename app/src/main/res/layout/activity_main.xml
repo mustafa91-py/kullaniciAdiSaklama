@@ -38,4 +38,17 @@
         android:text="sil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/isimText" />
+
+    <TextView
+        android:id="@+id/isimView"
+        android:layout_width="318dp"
+        android:layout_height="101dp"
+        android:hint="kayedeilen kullanıcı adı"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSil"
+        app:layout_constraintVertical_bias="0.166" />
 </androidx.constraintlayout.widget.ConstraintLayout>
