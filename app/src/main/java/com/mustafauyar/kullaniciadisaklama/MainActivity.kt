@@ -47,7 +47,14 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun sil (view: View){
-
+        /*
+        kaydedilen kullanıcı ismini silen fonskiyon
+         */
+        var kaydedilenKullaniciAl = sharedPreferences.getString("kullanici","")
+        if (kaydedilenKullaniciAl != null){
+            binding.isimView.text = "isim silindi $kaydedilenKullaniciAl" // silindiğini belirt yaz
+            sharedPreferences.edit().remove("kullanici").apply() // kullanici adli değişkeni sil
+        }
     }
     fun kullaniciAdiSorgula(name:String?): Boolean {
         // eğer bir şeyi return ediyorsan döndürelecek şeyin ne olduğunu belirt fun da
